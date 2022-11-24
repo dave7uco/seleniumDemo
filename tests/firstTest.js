@@ -7,7 +7,7 @@ async function example() {
     
     // Navigate to our app
     await driver.get('https://lambdatest.github.io/sample-todo-app/');
-    await driver.sleep(5000);
+    await driver.sleep(2000);
     
     // Add a todo
     await driver.findElement(By.id('sampletodotext')).sendKeys('Learn Selenium', Key.RETURN);
