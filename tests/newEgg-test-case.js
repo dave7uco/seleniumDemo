@@ -101,8 +101,8 @@ const {Builder, By, Key, until} = require ('selenium-webdriver');
     await driver.sleep(3000);
 
     // Decline protection plan
-    // await driver.findElement(By.xpath("//button[@data-dismiss='modal']")).click();
-    // await driver.sleep(2000);
+    await driver.findElement(By.xpath("//button[@data-dismiss='modal']")).click();
+    await driver.sleep(2000);
 
     // Closing Shopping Cart popup
     await driver.findElement(By.xpath("//button[@class='close']")).click();
